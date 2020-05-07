@@ -15,7 +15,11 @@ def key_for_min_value(name_hash)
     if old_value == ""
       old_value == value 
       key_value == name 
-    elsif v
-  
+    elsif key_value >= value 
+      old_value == value 
+      key_value == name
+    end 
+  end 
+  key_value
   old_key
 end
