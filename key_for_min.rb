@@ -8,18 +8,11 @@ def key_for_min_value(name_hash)
   name_hash.collect do |name, value|
     if old_key == "" 
       old_key = name
-    elsif old_key >= name.length 
+      old_value = value 
+    elsif value >= name.length 
       old_key = name 
     end 
-  end.each do |name, value|
-    if old_value == ""
-      old_value == value 
-      key_value == name 
-    elsif key_value >= value 
-      old_value == value 
-      key_value == name
-    end 
-  end 
-  key_value
+  end
+  
   old_key
 end
