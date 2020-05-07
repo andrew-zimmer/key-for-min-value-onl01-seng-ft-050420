@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
       old_key = name 
       old_value = value 
     elsif value == ""
-      nil
+      old_key == ""
     end 
   end
   
