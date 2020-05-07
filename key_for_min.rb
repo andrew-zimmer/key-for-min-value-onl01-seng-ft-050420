@@ -12,6 +12,8 @@ def key_for_min_value(name_hash)
     elsif value <= old_value 
       old_key = name 
       old_value = value 
+    elsif value == ""
+      nil
     end 
   end
   
